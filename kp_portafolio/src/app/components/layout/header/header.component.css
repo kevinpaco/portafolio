@@ -1,0 +1,29 @@
+#image{
+    background-image: url("/kp_portafolio/src/assets/fondo/logo.png");
+    width: 50px;
+    height: 30px;
+}
+
+.navbar{
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.collapse{
+     
+     font-size: larger;
+     font-weight: bold;
+    justify-content: right;
+}
+
+.nav-link{
+    color: rgb(126, 124, 124);
+}
+
+.nav-link:hover{
+    color: white;
+}
+
