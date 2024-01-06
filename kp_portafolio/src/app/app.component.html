@@ -1,10 +1,11 @@
 <app-header></app-header>
+<div class="container-fluid">
 <section id="sec">
-   <div class="row" style=" padding-top: 200px;padding-bottom: 150px;">
-          <div class="col-2 offset-2"> 
+       <div class="row" style=" padding-top: 200px;padding-bottom: 150px;">
+          <div class="col-sm-2 offset-sm-2 col-9 offset-3"> 
                 <img id="img" src="../assets/fondo/20231117_104626_1.jpg"/>
           </div>   
-          <div class="col-4" style="justify-content: center;">
+          <div class="col-lg-4 offset-lg-1  col-sm-4 offset-sm-3 col-12" style="justify-content: center;">
                <p class="text" style="margin-top: 80px;">Hola!</p>
                <p class="text" style="color: blue;">Soy Kevin Paco</p>
                <p class="text">Analista Programador Universitario</p>
@@ -13,84 +14,189 @@
 </section>
 <section id="sec2">
      <div class="row">
-          <div class="col-5 offset-1">
-              <p id="sobre">Sobre Mi</p>
-              <p id="mi">Soy Kevin Paco, Analista Programador Universitario con excelentes habilidades en la programación,
+          <hr>
+          <div class="col-md-4 col-10 offset-1">
+              <p class="subtitulo">Sobre Mí</p>
+              <p class="mi">Soy Kevin Paco, Analista Programador Universitario con excelentes habilidades en la programación,
 
                 me gusta colaborar en proyectos y trabajar en equipo. Estoy buscando un puesto de tiempo completo
                 
                 en el desarrollo de aplicaciones de cualquier tipo. </p>
-                <button (click)="descargarArchivo()">Descargar CV</button>
+                <button (click)="descargarArchivo()" class="btn">Descargar CV</button>
           </div>
-          <div class="col-6">
-               <p id="sobre">Mis Habilidades</p>
-               <p id="mi">Leguajes de programacion</p>
+          <div class="col-md-6 col-10 offset-1">
+               <p class="subtitulo">Mis Habilidades</p>
+               <p class="mi">Lenguajes de programación</p>
                <div class="row">
-                   <img src="../assets/fondo/java.jpg" class="col-3" alt="java" id="habilidad">
-                   <img src="../assets/fondo/js.png" class="col-3" alt="java" id="habilidad">
-                   <img src="../assets/fondo/c++.jpg" class="col-3" alt="java" id="habilidad">
-                   <img src="../assets/fondo/csharp.jpeg" class="col-3" alt="C sharp" >
+                   <img src="../assets/fondo/java.jpg" class="col-lg-3 col-md-4 col-6" alt="java" id="habilidad">
+                   <img src="../assets/fondo/js.png" class="col-lg-3 col-md-4 col-6" alt="javascript" id="habilidad">
+                   <img src="../assets/fondo/c++.jpg" class="col-lg-3 col-md-4 col-6" alt="c++" id="habilidad">
+                   <img src="../assets/fondo/csharp.jpeg" class="col-lg-3 col-md-4 col-6" alt="C sharp" id="habilidad" >
                 </div>
          </div>
       </div>
       <hr>
       <div class="row">
-        <p id="mi">Framework y Librerias</p>
-        <div class="row">
-            <img src="../assets/fondo/ng.png" class="col-3" alt="java" id="habilidad">
-            <img src="../assets/fondo/react.png" class="col-3" alt="java" id="habilidad"/>
-            <img src="../assets/fondo/spring-framework.jpg" class="col-3" alt="java" id="habilidad">
-            <img src="../assets/fondo/ndExpress.png" class="col-3" alt="java" id="habilidad">
-        </div>
-        <hr>
-        <p id="mi">Bases de Datos</p>
-        <div class="row">
-            <img src="../assets/fondo/mysql.png" class="col-3" alt="java" id="habilidad">
-            <img src="../assets/fondo/mongo.png" class="col-3" alt="java" id="habilidad"/>
-       </div>
+        <div class="col-10 offset-1">
+          <p class="mi">Frameworks y Librerias</p>
+          <div class="row">
+               <img src="../assets/fondo/ng.png" class="col-md-3 col-6" alt="Angular" id="habilidad">
+               <img src="../assets/fondo/react.png" class="col-md-3 col-6" alt="React" id="habilidad"/>
+               <img src="../assets/fondo/spring-framework.jpg" class="col-md-3 col-6" alt="Spring-framework" id="habilidad">
+               <img src="../assets/fondo/ndExpress.png" class="col-md-3 col-6" alt="Express" id="habilidad">
+          </div>
+        </div>  
+         <hr>
+         <div class="col-10 offset-1"> 
+         <p class="mi">Bases de Datos</p>
+          <div class="row">
+            <img src="../assets/fondo/mysql.png" class="col-md-3 col-6" alt="MySql" id="habilidad">
+            <img src="../assets/fondo/mongo.png" class="col-md-3 col-6" alt="MongoBD" id="habilidad"/>
+          </div>
+         </div>
+         <hr> 
+         <div class="col-10 offset-1"> 
+          <p class="mi">Habilidades Adicionales</p>
+           <div class="row">
+             <img src="../assets/fondo/docker.png" class="col-md-3 col-6" alt="MySql" id="habilidad">
+            </div>
+          </div>
+          <hr> 
       </div>
 </section>
 <section id="sec3">
-     <div class="container">
-          <h3>Mis Proyectos</h3>
+     <div class="container col-10 offset-1">
+          <h3 class="subtitulo">Mis Proyectos</h3>
+          <!--<p class="mi">Todos mis proyectos están dockerizados en máquinas virtuales de AWS EC2 (Amazon Elastic Compute Cloud).</p>--> 
           <div class="row">
-               <div class="container col-lg-4 col-sm-5 col-12">
+               <div class="container col-lg-4 col-sm-5 col-10 offset-1">
                     <figure>
-                         <img src="../assets/fondo/js.png" alt="">
+                         <img src="../assets/fondo/java_spring_boot.png" alt="">
                          <div class="capa">
-                              <h3>hola </h3>
-                              <p>Soy kevin paco</p>
+                              <h3>Proyecto Sprint Boot </h3>
+                              <p>plataforma web de salud y bienestar relacionada con dietas saludables y
+                                   seguimientos de alimentación</p>
+                              <p>Tecnologias Principales: Spring boot, Spring Validation, Spring Data JPA, Thymeleaf, MySQL</p>
+                              <a href="https://github.com/kevinpaco/salud-bienestar_repo.git" class="btn"  target="_blank"  ><i class="bi bi-github" style="margin-right: 4px;"></i>GitHub</a>
+                              <!--<P><b>codigo de admin:</b> 123admin</P>
+                              <P><b>codigo de ciudadano:</b> hfr8i</P>                              
+                               <div class="row">
+                                <a href="http://18.217.73.156/salud-bienestar/inicio" class="btn col-4 offset-1" target="_blank" ><i class="bi bi-browser-chrome" style="margin-right: 4px;"></i>app web</a>
+                                 <a href="https://github.com/kevinpaco/salud-bienestar_repo.git" class="btn"  target="_blank"  ><i class="bi bi-github" style="margin-right: 4px;"></i>GitHub</a>
+                              </div>-->
                          </div>
                     </figure>
                </div>
-               <div class="container col-lg-4 col-sm-5 col-12">               
+               <div class="container col-lg-4 col-sm-5 col-10 offset-1">               
                     <figure>
-                         <img src="../assets/fondo/js.png" alt="">
+                         <img src="../assets/fondo/java_spring_boot.png" alt="">
                          <div class="capa">
-                              <h3>hola </h3>
-                              <p>Soy kevin paco</p>
+                              <h3>Proyecto Backend Java, API REST </h3>
+                              <p>Colaboración en grupo para proyecto de administracion de cuantas de clientes</p>
+                              <p>Tecnologias Principales: Java, ModelMapper, Spring Data JPA, Spring Validation, Spring Mail, iText7, MYSQL </p>
+                              <a href="https://github.com/kevinpaco/administrar_cuentas_bancarias.git" class="btn"  target="_blank"  ><i class="bi bi-github" style="margin-right: 4px;"></i>GitHub</a>
                          </div>
                     </figure>
                </div>
-               <div class="container col-lg-4 col-sm-5 col-12">               
+               <div class="container col-lg-4 col-sm-5 col-10 offset-1">               
                     <figure>
-                         <img src="../assets/fondo/js.png" alt="">
+                         <img src="../assets/fondo/java_spring_boot.png" alt="">
                          <div class="capa">
-                              <h3>hola </h3>
-                              <p>Soy kevin paco</p>
+                              <h3>Proyecto Sprint Boot </h3>
+                              <p>plataforma web de empleo: donde se publican ofertas laborales y los ciudadanos
+                                   pueden registrarse para postular y acceder a un empleo.</p>
+                              <p>Tecnologias Principales: Spring Security, Spring boot, Spring Validation, Spring Data JPA, Thymeleaf, MySQL</p>
+                              <a href="https://github.com/kevinpaco/final-PacoKevin.git" class="btn"  target="_blank"  ><i class="bi bi-github" style="margin-right: 4px;"></i>GitHub</a>
+                             
                          </div>
                     </figure>
                </div>
-               <div class="container col-lg-4 col-sm-5 col-12">               
+               <div class="container col-lg-4 col-sm-5 col-10 offset-1">               
                     <figure>
-                         <img src="../assets/fondo/js.png" alt="">
-                         <div class="capa">
-                              <h3>hola </h3>
-                              <p>Soy kevin paco</p>
+                         <img src="../assets/fondo/Mean_Stack.jpg" alt="">
+                          <div class="capa">
+                              <h3>Proyecto MEAN-STACK </h3>
+                              <p>plataforma web de turismo: donde se publican ofertas de hoteles, restaurantes y los ciudadanos pueden
+                                   hacer una recerva.</p>
+                              <p>Tecnologias Backend: JsonWebToken, Node.js, Express.js, Mongoose, MongoDB, Cors. </p>
+                              <p>Tecnologias Frontend: Angular, TypeScript, RxJS, Bootstrap, Chart.js, ngx-toastr.</p>
+                              <div class="row">
+                                   <a href="https://github.com/kevinpaco/Trabajo_HIA_Final.git" class="btn col-4 offset-1" target="_blank" >Docker</a>
+                                    <a href="https://github.com/kevinpaco/Plataforma_Turismo.git" class="btn col-4 offset-1"  target="_blank"  ><i class="bi bi-github" style="margin-right: 4px;"></i>GitHub</a>
+                              </div>                             
+                         </div>
+                    </figure>
+               </div>
+               <div class="container col-lg-4 col-sm-5 col-10 offset-1">               
+                    <figure>
+                         <img src="../assets/fondo/Mean_Stack.jpg" alt="">
+                          <div class="capa">
+                              <h3>Proyecto MEAN-STACK</h3>
+                              <p>(En desarrollo)</p>
+                              <p>plataforma web de Empleo: donde se publican ofertas laborales</p>
+                              <p>Tecnologias Backend: JsonWebToken, Node.js, Express.js, Mongoose, MongoDB, Cors. </p>
+                              <p>Tecnologias Frontend: Angular, TypeScript, RxJS, Bootstrap</p>
+                              <a href="https://github.com/kevinpaco/Plataforma_Empleo.git" class="btn"  target="_blank"  ><i class="bi bi-github" style="margin-right: 4px;"></i>GitHub</a>
+                                                           
+                         </div>
+                    </figure>
+               </div>
+               <div class="container col-lg-4 col-sm-5 col-10 offset-1">               
+                    <figure>
+                         <img src="../assets/fondo/csharp_net.png" alt="">
+                          <div class="capa">
+                              <h3>Playa App(C#)</h3>
+                              <p>(trabajo echo en grupo)</p>
+                              <p>App de Estacionamiento: donde se registra la entrada y salida de un vehiculo con su respectivo ticket.</p>
+                              <p>Tecnologias Principales: C#,.NET Framework, WPF, ADO.NET, SQL Server Compact, </p>                           
+                              <div class="row">
+                                   <a (click)="descargarManualPlayaApp()" class="btn col-4 offset-1" target="_blank" ><i class="bi bi-download" style="margin-right: 4px;"></i>Manual</a>
+                                    <a href="https://github.com/kevinpaco/App_Estacionamiento.git" class="btn col-4 offset-1"  target="_blank"  ><i class="bi bi-github" style="margin-right: 4px;"></i>GitHub</a>
+                              </div>
+                                                           
+                         </div>
+                    </figure>
+               </div>
+               <div class="container col-lg-4 col-sm-5 col-10 offset-1">               
+                    <figure>
+                         <img src="../assets/fondo/csharp_net.png" alt="">
+                          <div class="capa">
+                              <h3>Optica Eight(C#)</h3>
+                              <p>(trabajo echo en grupo)</p>
+                              <p>Gestion de optica: Permite la administración de clientes y productos hasta la realización
+                                   de ventas y la gestión de obras sociales</p>
+                              <p>Tecnologias Principales: C#,.NET Framework, Windows Forms, ADO.NET, SQL Server Compact, </p>                           
+                              <p>Admin: </p>
+                              <div class="row">
+                                   <a (click)="descargarManualOptica()" class="btn col-4 offset-1" target="_blank" ><i class="bi bi-download" style="margin-right: 4px;"></i>Manual</a>
+                                    <a href="https://github.com/kevinpaco/App_Optica_Eight.git" class="btn col-4 offset-1"  target="_blank"  ><i class="bi bi-github" style="margin-right: 4px;"></i>GitHub</a>
+                              </div>
+                                                           
                          </div>
                     </figure>
                </div>
           </div>
      </div>
 </section>
+<section id="sec4">
+     <div class="container">
+          <h3 class="subtitulo">Contacto</h3>
+          <h4 id="proyects">Contactame si quieres que trabajemos juntos</h4>
+          <div class="row">
+              <div class="col-2 offset-3 cont" >
+                  <img src="../assets/fondo/mail.jpg" height="50" alt="mail">
+                  <p><a href="mailto:kevinpaco40@gmail.com">Mi Correo</a></p>
+              </div>
+              <div class="col-2 cont">
+               <img src="../assets/fondo/git.png" height="50" alt="github">
+               <p><a href="https://github.com/kevinpaco">Mi Repositorio</a></p>
+           </div>
+           <div class="col-2 cont">
+               <img src="../assets/fondo/linkedin.png" height="50" alt="linkedin">
+               <p><a href="https://www.linkedin.com/in/kevin-paco-96bb8925a/">Contáctame</a></p>
+           </div>
+          </div>
+     </div>
+</section>
+</div>
 <app-footer></app-footer>

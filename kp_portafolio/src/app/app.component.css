@@ -1,9 +1,13 @@
+.container-fluid{
+    background-color: rgb(39, 1, 44);
+}
+
 #sec{
     background-image: url("../assets/fondo/code.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
-    
+    height: auto;  
+    position: relative; 
 }
 
 #img{
@@ -21,24 +25,54 @@
 }
 
 #sec2{
-     background-color: white;
+     background-image: url("../assets/fondo/habilidad.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 
 #sec3{
-    background-color: aquamarine;
+    background-image: url("../assets/fondo/misproyectos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: auto;
     
 }
 
-#sobre{
-    font-size: x-large;
-    font-weight: bold;
-    color: black;
+#sec4{
+    background-image: url("../assets/fondo/misproyectos.jpg");
+    background-color: white;
 }
 
-#mi{
+.subtitulo{
+    font-size:xx-large;
+    font-weight: bold;
+    text-decoration: underline dashed;
+    font-style: italic;
+    color: blue;
+}
+
+.mi{
    font-weight: bold;
-   color: black;
+   font-size: large;
+   color: white;
+}
+
+#proyects{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline dashed;
+}
+
+hr{
+    margin-top: 10px;
+    border-color: azure;
+    border-style: dashed;
+}
+
+#habilidad{
+    border-radius: 30px;
+    margin-top: 6px;
 }
 
 .container{
@@ -47,7 +81,7 @@
 }
 .container figure{    
     position: relative;
-    height: 250px;
+    height: 265px;
     width: 350px;
     overflow: hidden;
     border-radius: 6px;
@@ -68,7 +102,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 103, 123, 0.7);
+    background-color: rgba(3, 74, 88, 0.835);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
@@ -81,8 +115,8 @@
 }
 
 .container figure:hover > .capa h3{
-     margin-top: 70px;
-     margin-bottom: 15px;
+     margin-top: 20px;
+     margin-bottom: 10px;
 }
 
 .container figure .capa h3{
@@ -98,6 +132,56 @@
    font-size: 15px;
    line-height: 1.5;
    width: 100%;
-   max-width: 220px;
+   max-width: 350px;
    margin: auto;
 }
+
+.cont{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cont img{
+    border-radius: 6px;
+}
+
+.btn {
+ 
+    position: relative;
+    display: inline-block;
+    padding: 10px 17px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(106, 182, 230, 0.3);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.3);
+    transform: perspective(100px) rotateX(10deg);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  .btn:hover::before {
+    opacity: 1;
+    transform: perspective(100px) rotateX(0deg);
+  }
+
